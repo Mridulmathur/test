@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/docs.theme.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<script
+										src="https://code.jquery.com/jquery-3.2.1.min.js"
+										integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+										crossorigin="anonymous">
+		</script>
+
+
+	</head>
+	<body>
+
+
+		<div id="slider">
+			<img class="slideshow" src="1.png">
+			<img class="slideshow" src="2.png">
+			<img class="slideshow" src="3.png">
+			<img class="slideshow" src="4.png">
+			<img class="slideshow" src="1.jpg">
+			<img class="slideshow" src="2.jpg">
+			<img class="slideshow" src="3.jpg">
+			<img class="slideshow" src="4.jpg">
+			<button onclick="sliderpre()">pre</button>
+			<button onclick="slider()">next</button>
+			<button onclick="cleartimeOut()">stopauto</button>
+		</div>
+
+		<script>
+			var slectImages = document.getElementsByClassName("slideshow");			
+			var index = 1;			
+			for(var i = 0; i<slectImages.length; i++){				
+				slectImages[i].style.display = 'none';				
+			}
+
+			function slider(){
+
+				slectImages[index].style.display = 'block';	
+				index++;
+
+			}
+
+		</script>
+
+
+	</body>
+</html>
